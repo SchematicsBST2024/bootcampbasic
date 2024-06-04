@@ -1,1 +1,15 @@
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Link</title>
+    </head>
+    <body>
+        <a href="https://www.instagram.com/schematics.its?igsh=dmo5NWVnajZyZXJ5" target="_self">
+            Visit Schematics
+        </a>
+        <a href="https://www.instagram.com/schematics.its?igsh=dmo5NWVnajZyZXJ5" target="_self">
+            <img src="https://waynerushbodywork-massage-tauranga-rotorua-bayofplenty-bop.co.nz/wp-content/uploads/2020/11/instagram-logo1.jpg" Style="width:42px;height:42px;">
+        </a>
+    </body>
+</html>
