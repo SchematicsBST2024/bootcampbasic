@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Headings 2</title>
+    </head>
+    <body>
+        <h1>Heading h1 default</h1>
+        <h1 style="font-size: 70px;">Heading h1 70 px</h1>  
+    </body>
+</html>
