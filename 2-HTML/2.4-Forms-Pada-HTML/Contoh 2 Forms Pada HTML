@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Form</title>
+    </head>
+    <body>
+        <p>Forms</p>
+        <form action="index.html" method="GET" autocomplete="on" target="_blank" name="Test2">
+            <fieldset>
+                <legend>Textarea</legend>
+                <textarea name="message" rows="7" cols="30">Kata-Kata Mutiara Hari Ini</textarea><br>
+            </fieldset><br>
+            <fieldset>
+                <legend>Select</legend>
+                <select>
+                    <optgroup label="IPA">
+                        <option value="volvo">Kimia</option>
+                        <option value="saab">Biologi</option>
+                    </optgroup>
+                    <optgroup label="IPS">
+                        <option value="mercedes">Geografi</option>
+                        <option value="audi">Ekonomi</option>
+                    </optgroup>
+                </select><br>
+            </fieldset><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>    
+</html>
