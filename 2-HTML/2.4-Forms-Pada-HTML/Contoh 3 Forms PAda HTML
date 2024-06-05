@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Form</title>
+    </head>
+    <body>
+        <form action="index.html" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <p>Button, jika button di click maka muncul alert bertuliskan Hello World!</p>
+            <button type="button" onclick="alert('Hello World!')">Click Me!</button><br>
+            <p>Data List, masukan buah yang kamu suka!</p>
+            <input list="buah" name="buah sehat">
+            <datalist id="buah">
+                <option value="Apel">
+                <option value="Jeruk">
+                <option value="Pisang">
+            </datalist><br><br><br><br><br><br><br><br>
+            <p>Output:</p>
+            <input type="range" id="a" value="50"> + 
+            <input type="number" id="b" value="50">
+            = <output name="x"></output>
+            <input type="submit">
+        </form>
+    </body>       
+</html>
