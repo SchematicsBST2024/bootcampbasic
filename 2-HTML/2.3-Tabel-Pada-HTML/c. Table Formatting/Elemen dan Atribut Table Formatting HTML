@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Table</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                border-style: solid;
+                border-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <table style="background-color: gainsboro;">
+            <caption>Jumlah Siswa Kelas 8</caption>
+            <colgroup>
+                <col span="1" style="background-color: yellow;">
+            </colgroup>
+            <tr>
+                <th></th>
+                <th>Laki-laki</th>
+                <th>Perempuan</th>
+            </tr>
+            <tr>
+                <th>Kelas 8A</th>
+                <td>12</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <th>Kelas 8B</th>
+                <td>10</td>
+                <td>14</td>
+            </tr>
+        </table>
+    </body>
+</html>
