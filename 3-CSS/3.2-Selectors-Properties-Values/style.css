@@ -1,0 +1,135 @@
+/* File CSS Eksternal */
+
+/* Gaya untuk judul h1 */
+h1 {
+    color: white; /* Warna teks putih */
+}
+
+/* Gaya untuk judul h2 */
+h2 {
+    color: grey; /* Warna teks abu-abu */
+    text-align: center; /* Teks rata tengah */
+}
+
+/* Gaya umum untuk header dan footer */
+header, footer {
+    background-color: #333; /* Latar belakang berwarna gelap */
+    color: white; /* Warna teks putih */
+    padding: 10px; /* Padding di sekitar konten */
+    text-align: center; /* Teks rata ke tengah */
+}
+
+/* Gaya untuk navigasi */
+
+/*Inisialisasi untuk menyembunyikan navigasi unordered list*/
+nav ul { 
+    list-style-type: none; /* Tidak ada bullet pada daftar */
+    padding: 0; /* Tidak ada padding */
+}
+
+/*Inisialisasi untuk mengatur navigasi ordered list*/
+nav ul li { 
+    display: inline-block; /* Tampilkan item secara horizontal */
+    margin-right: 10px; /* Jarak antar item */
+}
+
+/*Inisialisasi untuk menyembunyikan navigasi yang terhubung dengan article*/
+nav ul li a { 
+    color: white; /* Warna tautan putih */
+    text-decoration: none; /* Tidak ada garis bawah pada tautan */
+    display: inline-block; /* Tampilkan item secara horizontal */
+    margin-right: 10px; /* Jarak antar item */
+}
+
+/* Gaya umum untuk body */
+body {
+    font-family: Arial, sans-serif; /* Jenis font Arial atau sans-serif */
+    margin: 0; /* Tidak ada margin */
+    padding: 0; /* Tidak ada padding */
+    box-shadow: 5px 5px 5px 10px rgba(0,0,0,.4); /* Bayangan kotak pada konten */
+    height: auto; /* Tinggi otomatis sesuai konten */
+    line-height: 1.6; /* Tinggi baris teks */
+}
+
+/* Gaya untuk bagian main */
+main {
+    background-color: #f2f2f2; /* Latar belakang berwarna terang */
+    padding: 20px; /* Padding di sekitar konten */
+    display: flex; /* Gunakan flexbox untuk tata letak */
+    justify-content: space-around; /* Ratakan ruang antar elemen */
+}
+
+/* Gaya untuk judul h2 di dalam main */
+main h2 {
+    margin-top: 10px; /* Margin atas */
+    margin-bottom: 10px; /* Margin bawah */
+}
+
+/* Gaya untuk gambar di dalam main */
+main img {
+    display: block; /* Tampilkan sebagai blok */
+    margin: 0 auto; /* Rata tengah secara horizontal */
+    max-width: 100%; /* Lebar maksimum 100% */
+}
+
+/* Gaya untuk artikel */
+article {
+    border: double 10px #ccc; /* Border ganda berwarna abu-abu */
+    margin: 10px; /* Margin di sekitar artikel */
+    margin-bottom: 40px; /* Margin bawah lebih besar */
+    padding: 20px; /* Padding di dalam artikel */
+    flex: 1; /* Flex item membagi ruang yang tersisa sama rata */
+}
+
+/* Gaya untuk keterangan/caption gambar */
+figcaption {
+    color: #666; /* Warna teks abu-abu */
+    text-align: center; /* Teks rata tengah */
+}
+
+/* Gaya untuk footer */
+footer {
+    background-color: #333; /* Latar belakang berwarna gelap */
+    color: white; /* Warna teks putih */
+    padding: 10px; /* Padding di sekitar konten */
+    text-align: center; /* Teks rata tengah */
+    position: fixed; /* Posisi tetap di bawah */
+    bottom: 0; /* Rata bawah */
+    width: 100%; /* Lebar 100% */
+}
+
+/* Responsif Desain untuk tablet dan perangkat lebih besar */
+@media (min-width: 768px) {
+    header {
+        padding: 20px; /* Padding lebih besar */
+    }
+
+    nav ul li {
+        margin-right: 30px; /* Jarak antar item lebih besar */
+    }
+
+    main {
+        padding: 40px; /* Padding lebih besar */
+    }
+
+    article {
+        margin-bottom: 60px; /* Margin bawah lebih besar */
+        padding: 40px; /* Padding lebih besar */
+    }
+}
+
+/* Responsif Desain untuk layar lebih besar */
+@media (min-width: 1024px) {
+    nav ul li {
+        margin-right: 40px; /* Jarak antar item lebih besar */
+    }
+
+    main {
+        padding: 60px; /* Padding lebih besar */
+    }
+
+    article {
+        margin-bottom: 80px; /* Margin bawah lebih besar */
+        padding: 60px; /* Padding lebih besar */
+    }
+}
