@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Table</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Nama</th>
+                <th>Hobi</th>
+                <th>Cita-Cita</th>
+            </tr>
+            <tr>
+                <td>Martin</td>
+                <td>Sepak Bola</td>
+                <td>Pemain Sepak Bola</td>
+            </tr>
+            <tr>
+                <td>Ray</td>
+                <td>Membaca</td>
+                <td>Ilmuan</td>
+            </tr>
+        </table>
+    </body>
+</html>
