@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <style>
+        body {background-color:aqua; text-align: center;}
+        h1 {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+        p {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+    </style>
+</head>
+
+<body>
+    <h1>Hello Everyone!</h1>
+    <a href="easter.html"><img src="RubberDuck.png" style="width:100px"></a>
+    
+    <p id="state"> I have a duck here!</p>
+    <button type="button" onclick="iHaveADuck()"> Do you really have a duck? </button>
+</body>
+</html>
+<script>  
+    function iHaveADuck() {
+        document.getElementById("state").innerHTML = "Yes I have a duck";
+    }
+</script>
+
