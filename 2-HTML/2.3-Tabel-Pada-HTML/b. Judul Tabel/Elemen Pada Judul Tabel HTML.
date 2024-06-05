@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Table</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Jumlah Siswa Kelas 8</caption>
+            <tr>
+                <th colspan="4">Jumlah Siswa</th>
+            </tr>
+            <tr>
+                <th rowspan="3">Kelas</th>
+                <th colspan="2">Laki-laki</th>
+                <th>Perempuan</th>
+            </tr>
+            <tr>
+                <th>Kelas 8A</th>
+                <td>12</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <th>Kelas 8B</th>
+                <td>10</td>
+                <td>14</td>
+            </tr>
+        </table>
+    </body>
+</html>
