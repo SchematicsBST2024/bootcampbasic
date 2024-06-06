@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <style>
+        body {background-color:aqua; text-align: center;}
+        h1 {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+        p {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+    </style>
+    <script src="4.2. Syntax Java Script.js"></script>
+</head>
+
+<body>
+    <script src="4.2. Syntax Java Script.js"></script>
+    <h1>Hello Everyone!</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Rubber_duckies_So_many_ducks.jpg/1280px-Rubber_duckies_So_many_ducks.jpg" style="width:100px">
+    
+    <p id="forlater"></p>
+    <p id="state">Contoh Penggunaan Control Statement</p>
+    
+    <button type="button" onclick="contoh1()">Tekan untuk melihat keberuntungan ada</button>
+    <p id="lucky"></p>
+    
+    <hr>
+    
+    <p>Contoh For loop</p>
+    <button type="button" onclick="contoh2()">Tekan untuk melihat nilai variabel dalam array</button>
+    <p id="arrayVal"></p>
+
+</body>
+</html>
+
+<script>
+    let random = Math.floor(Math.random() * 10);
+    document.getElementById("forlater").innerHTML = "Your number is " + random;
+    //Dibawah ini adalah contoh untuk conditional statement dan loops
+    let a = 15;
+    let b = 3;
+    let c;
+    
+    //Contoh penggunaan If Else
+    if (a == 15) {
+        //Jika kondisi diatas terpenuhi, maka blok kode ini akan dijalankan.
+        c = 12;
+    }
+    else if (b == 3) {
+        /*
+            Jika kondisi sebelumnya (if / else if) tidak terpenuhi, maka else if akan dicek kondisinya.
+            Else if memiliki kondisi baru yang harus dipenuhi agar blok kode ini dijalankan.
+        */
+        c -= 12
+    }
+    else {
+        /*
+            Jika semua kondisi sebelumnya tidak terpenuhi, maka blok kode ini akan dieksekusi.
+        */
+    }
+    
+    //Untuk mengecek apakah anda beruntung
+    function contoh1() {
+        if (random < 4){
+            document.getElementById("lucky").innerHTML = "Angka anda dibawah 4, anda beruntung!";
+        }
+        else {
+            document.getElementById("lucky").innerHTML = "Maaf belum beruntung";
+        }
+    }
+    
+    //Contoh penggunaan Switch
+    switch (a) {
+        case 10:
+            b += 12;
+            break;
+        case 12:
+            b += 7;
+            break;
+        case 10:
+            b += 5;
+            break;
+        default:
+            b -= 3;
+            break;
+    }
+
+    //Contoh penggunaan for loop
+    let e = 12;
+    for (let i = 0; i < 12; ++i){
+        e += 12;
+    }
+    
+    //Contoh penggunaan for in loop
+    let andong = [12,1];
+    let counter = 0;
+    for (let a in andong) {
+        counter += andong[a];
+    }
+
+    //Contoh penggunaan for of
+    let amboy = [13,15];
+    let counter1 = 0;
+    
+    for (let a of andong) {
+        counter1 += a;
+    }
+
+    //Contoh penggunaan while loop
+    let counter2 = 0;
+    while (counter2 < 15) {
+        counter2 += 1;
+    }
+
+    let counter3 = 0;
+    do {
+        counter3 += 1;
+    } while (counter3 < 15);
+
+    //Contoh penggunaan break dan continue
+    let counter4 = 0;
+    while (counter4 < 20) {
+        counter4++;
+        if (counter4 > 3) {
+            counter4 -= 1;
+        }
+        if (counter4 % 2 == 0) {
+            counter4 += 3;
+            continue;
+        }
+        if (counter4 == 9) {
+            counter4 /= 3;
+            break;
+        }
+    }
+    
+    //Untuk mengeluarkan angka di dalam suatu array
+    function contoh2() {
+        let anArr = [12,9,10,5,8,2,5,1,0,8,7];
+        let anArrVal = "";
+        for (let i of anArr) {
+            anArrVal += i + ' ';
+        }
+        document.getElementById("arrayVal").innerHTML = anArrVal;
+    }
+    
+</script>
+
+
+
