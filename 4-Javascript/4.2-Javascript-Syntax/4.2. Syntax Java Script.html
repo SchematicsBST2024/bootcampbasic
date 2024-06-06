@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <style>
+        body {background-color:aqua; text-align: center;}
+        h1 {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+        p {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+    </style>
+    <script src="4.2. Syntax Java Script.js"></script>
+</head>
+
+<body>
+    <script src="4.2. Syntax Java Script.js"></script>
+    <h1>Hello Everyone!</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Rubber_duckies_So_many_ducks.jpg/1280px-Rubber_duckies_So_many_ducks.jpg" style="width:100px">
+    
+    <p id="state">Contoh Penggunaan variabel JavaScript</p>
+    
+    <button type="button" onclick="contoh1()">Tekan untuk melihat output</button>
+    <p id="outputIntro"></p>
+    
+    <hr>
+    
+    <p>Contoh variabel</p>
+    <button type="button" onclick="contoh2()">Tekan untuk melihat nilai variabel</button>
+    <p id="aS"></p>
+    <p id="aN"></p>
+    <p id="bI"></p>
+    <p id="ar"></p>
+    <p id="benda"></p>
+
+    <hr>
+    <p>Contoh Operator</p>
+    <button type="button" onclick="contoh3()">Tekan untuk melihat nilai variabel</button>
+    <p id="plus"></p>
+    <p id="mins"></p>
+    <p id="mult"></p>
+    <p id="expo"></p>
+    <p id="divs"></p>
+    <p id="mods"></p>
+    <p id="incr"></p>
+    <p id="decr"></p>
+    <p id="bool"></p>
+    <p id="dalm"></p>
+    <p> </p>
+</body>
+</html>
+
+<script>
+    //Semua dibawah ini adalah statement
+    //Contoh Variabel
+    let helloSt = "Hello";  //Cara modern untuk membuat variabel
+    const clickCount = "12"       //Variabel konstan, tidak bisa diubah nilainya
+    function contoh1() {
+            document.getElementById("outputIntro").innerHTML = helloSt + " + " + clickCount ;
+            aInt++;         //Variabel ini tidak akan di increment karena variabelnya bertipe konstan
+    }
+
+    //Tipe - tipe data di dalam variabel
+    let a; //Undefined
+    let aString = "Schematics 2024";                //String
+    let aNumber = 42069;                            //Number
+    let bigInteger  = BigInt("12345678901234567890");   //BigInt
+    let array   = [12, 15, 2, 13, 9];               //Array, tipe datanya harus sama di tiap elemen
+                                                    //Object, tiap elemeen punya keynya
+    let objectKarakter   = {
+        nama:"Williamson",
+        umur:12,
+        barang:["Pisau", "Lentera"]
+    }                                               
+    
+    function contoh2() {
+            document.getElementById("aS").innerHTML = "String : " + aString;
+            document.getElementById("aN").innerHTML = "Number : " + aNumber;
+            document.getElementById("bI").innerHTML = "BigInt : " + bigInteger;
+            document.getElementById("ar").innerHTML = "Array (0 - 4): " + array[0] + ' ' + array[1]+ ' ' + array[2]+ ' ' + array[3]+ ' ' + array[4];
+            document.getElementById("benda").innerHTML = "ObjectKarakter : <br>[nama] : " + objectKarakter.nama + " | [umur] : " + objectKarakter.umur + " | [barang] : (" 
+            + objectKarakter.barang[0] + ")(" + objectKarakter.barang[1] + ")";
+    }
+
+    //Contoh Operator
+    let num0 = 20;
+    let num1 = 24;
+    let num2 = "24";
+
+    const anPlus = num0 + num1; //Tambah
+    const anMins = num0 - num1; //Kurang
+    const anMult = num0 * num1; //Kali
+    const anExpo = num0 ** num1;//Eksponen / Pangkat
+    const anDivs = num0 / num1; //Pembagian
+    const anMods = num0 % num1; //Modulo (sisa dari pembagian)
+    num++;                      //Inkremen
+    num--;                      //Dekremen
+    let anDalm;
+    {
+            let num0 = 19;
+            let num1 = 64;
+            anDalm = num0 + num1;
+    }
+    const anBool = num1 === num2; 
+    //Hasilnya adalah false, karena walaupun "sama-sama" 24, num1 punya tipe data yang berbeda dengan num2
+
+    function contoh3() {
+        document.getElementById("plus").innerHTML = num0 + " + " + num1 + " = " + anPlus;
+        document.getElementById("mins").innerHTML = num0 + " - " + num1 + " = " + anMins;
+        document.getElementById("mult").innerHTML = num0 + " * " + num1 + " = " + anMult;
+        document.getElementById("expo").innerHTML = num0 + " ^ " + num1 + " = " + anExpo;
+        document.getElementById("divs").innerHTML = num0 + " / " + num1 + " = " + anDivs;
+        document.getElementById("mods").innerHTML = num0 + " % " + num1 + " = " + anMods;
+        document.getElementById("incr").innerHTML = num0 + "++ = " + (++num0);
+        document.getElementById("decr").innerHTML = num0 + "-- = " + (--num0);
+        document.getElementById("bool").innerHTML = "Is " + num1 + " equal to "+ num2 + "? " + (num0 === num1);
+        
+    }
+
+</script>
+
+
+
