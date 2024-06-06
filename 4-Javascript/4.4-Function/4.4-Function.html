@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <style>
+        body {background-color:aqua; text-align: center;}
+        h1 {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+        p {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+    </style>
+    <script src="4.2. Syntax Java Script.js"></script>
+</head>
+
+<body>
+    <script src="4.2. Syntax Java Script.js"></script>
+    <h1>Hello Everyone!</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Rubber_duckies_So_many_ducks.jpg/1280px-Rubber_duckies_So_many_ducks.jpg" style="width:100px">
+    <p id="state"> I have a duck here!</p>
+    <button type="button" onclick="iHaveADuck()"> Do you really have a duck? </button>
+</body>
+</html>
+
+<script>
+    //Dibawah adalah contoh untuk menggunakan fungsi
+
+    //Function yang telah digunakan sebelumnya untuk menampilkan teks di HTML menggunakan function
+    //Ini adalah contoh function yang dipakai di 4.1
+    function iHaveADuck() {
+        document.getElementById("state").innerHTML = "Yes I have a duck";
+    }
+
+    //Contoh function 
+    function aFunction (a, b) {
+        for (let i = 0; i < 12; ++i){
+            b += a;
+            if (b % a) b *= 3;
+        }
+        return b;
+    }
+
+    //Memasukkan hasil return function ke dalam suatu variabel
+    let cdc = aFunction(12, 5);
+    let ftc = aFunction(7, 8);
+
+    let cia = 0;
+    for (let i = 0; i < 10; ++i) {
+        cia += aFunction(i+1, i*2);
+    }
+    
+</script>
+
+
+
