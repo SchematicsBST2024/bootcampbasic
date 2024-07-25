@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <style>
+        body {background-color:aqua; text-align: center;}
+        h1 {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+        p {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+        div {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: palevioletred;}
+
+        .img0 {height:120px;}
+        
+    </style>
+</head>
+
+<body onload="checkCookies()">
+    <h1>Hello Everyone!</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Rubber_duckies_So_many_ducks.jpg/1280px-Rubber_duckies_So_many_ducks.jpg" style="width:100px">
+    <p id="state"> I have a duck here!</p>
+    
+    <hr>
+    
+    <p id="Hello"></p>
+    <img id="Hi" width="100px">
+
+    <p id="cookiesCheck"></p>
+
+    <p>Klik tombol dibawah untuk tahu waktu sekarang</p>
+    <button id="splash">Click me!</button>
+    <p id="TimeNow"></p>
+
+    <hr>
+    
+    <p>Klik dibawah untuk mengetahui rahasia negara</p>
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)">Rahasia Negara</div>
+
+    <hr>
+
+    <p>Bawa kursor ke elemen dibawah untuk melihat surprise</p>
+    <img src="https://www.its.ac.id/wp-content/uploads/2020/07/Lambang-ITS-2-300x300.png" class="img0" onmouseover="mOver(this)" onmouseout="mOut(this)">
+    
+    <hr>
+
+    <p>Input dibawah akan selalu uppercase</p>
+    <input type="text" id="name0" oninput="upperCase()">
+
+    <p>Input dibawah akan menjadi uppercase saat selesai mengetik</p>
+    <input type="text" id="name1" onchange="upperCase()">
+
+    <hr>
+</body>
+</html>
+
+<script>
+    //Memodifikasi elemen dan atribut HTML dengan JavaScript
+    document.getElementById("Hello").innerHTML = "Elemen ini diisi oleh JavaScript";
+    document.getElementById("Hi").src = "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png";
+    //Konten Dinamis HTML
+
+    //Mendapatkan waktu sekarang saat tombol telah diklik
+    document.getElementById("splash").onclick = getTime;
+    function getTime() {
+        document.getElementById("TimeNow").innerHTML = Date();
+    }
+    
+    //State elemen saat browser sudah diload
+    function checkCookies() {
+        let text = "";
+        
+        if (navigator.cookieEnabled == true) {
+            text = "Cookies dinyalakan";
+        }
+        
+        else {
+            text = "Cookies tidak dinyalakan";
+        }
+        
+        document.getElementById("cookiesCheck").innerHTML = text;
+    }
+
+    //State elemen saat mouse diklik
+    function mDown(obj) {
+        obj.innerHTML = "Schematics itu seru!";
+    }
+    //State elemen saat mouse tidak diklik
+    function mUp(obj) {
+        obj.innerHTML = "Rahasia Negara";
+    }
+    
+    //State elemen saat mouse berada di elemen
+    function mOver(obj0) {
+        obj0.src = "https://schematics-its.com/_next/image?url=%2Fimages%2Ffooter%2FschLogo.png&w=384&q=75";
+        obj1.innerHTML = "Schematics";
+    }
+    //State elemen saat mouse tidak berada di elemen
+    function mOut(obj0) {
+        obj0.src = "https://www.its.ac.id/wp-content/uploads/2020/07/Lambang-ITS-2-300x300.png";
+    }
+
+
+    //State elemen saat adanya input
+    function upperCase(){
+        const x = document.getElementById("name0");
+        x.value = x.value.toUpperCase();
+
+        const y = document.getElementById("name1");
+        y.value = y.value.toUpperCase();
+    }
+</script>
+
+
