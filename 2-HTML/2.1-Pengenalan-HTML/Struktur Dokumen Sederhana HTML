@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Judul Halaman</title>
-</head>
-<body>
-
-<h1>Heading atau Judul</h1>    
-<p>Paragraf</p>
-
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Judul Halaman</title>
+  </head>
+  <body>
+    <h1>Heading atau Judul</h1>
+    <p>Paragraf</p>
+  </body>
 </html>
