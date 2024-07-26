@@ -16,8 +16,6 @@ Sebagaimana tubuh manusia yang disusun dari kerangka tulang, HTML pada website b
 
 Setelah memiliki kulit dan tampak cantik, selanjutnya kita membutuhkan interaktivitas pada kucing agar dapat bergerak dan berinteraksi. Ibarat dalam kasus ini, JavaScript-lah yang berperan dalam membuat website menjadi dinamis dan interaktif.
 
-## Doctype HTML
-
 ## Anatomi Dokumen HTML
 
 ```html
