@@ -21,7 +21,7 @@ Setelah memiliki kulit dan tampak cantik, selanjutnya kita membutuhkan interakti
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
+  `<head>`
     <meta charset="utf-8" />
     <title>Judul Halaman</title>
   </head>
@@ -39,21 +39,21 @@ Setelah memiliki kulit dan tampak cantik, selanjutnya kita membutuhkan interakti
 - `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">` adalah contoh doctype HTML versi 4.01.
 - `<!DOCTYPE html>` adalah doctype HTML versi terbaru yang disebut HTML5.
 
-### Elemen <head>
+### Elemen `<head>`
 
-Elemen <head> berfungsi untuk menyimpan informasi tentang dokumen HTML. Informasi tersebut bisa berupa elemen meta, style, favicon, atau link. Selain itu, elemen ini memungkinkan kita untuk menetapkan judul halaman web yang akan ditampilkan di tab browser. Berikut adalah beberapa contoh elemen yang biasanya ditempatkan dalam elemen <head>.
+Elemen `<head>` berfungsi untuk menyimpan informasi tentang dokumen HTML. Informasi tersebut bisa berupa elemen meta, style, favicon, atau link. Selain itu, elemen ini memungkinkan kita untuk menetapkan judul halaman web yang akan ditampilkan di tab browser. Berikut adalah beberapa contoh elemen yang biasanya ditempatkan dalam elemen `<head>`.
 
-- <title> 
-- <style>
-- <base>
-- <link>
-- <meta>
-- <script>
-- <noscript>
+- `<title> `
+- `<style>`
+- `<base>`
+- `<link>`
+- `<meta>`
+- `<script>`
+- `<noscript>`
 
-### Elemen <body>
+### Elemen `<body>`
 
-Setiap konten atau elemen dalam elemen <body> akan ditampilkan dalam halaman web. Elemen <body> biasanya berisi elemen-elemen seperti heading, paragraf, gambar, video, dsb.
+Setiap konten atau elemen dalam elemen `<body>` akan ditampilkan dalam halaman web. Elemen `<body>` biasanya berisi elemen-elemen seperti heading, paragraf, gambar, video, dsb.
 
 ### Hierarki Elemen HTML
 
